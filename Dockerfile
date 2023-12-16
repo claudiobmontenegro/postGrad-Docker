@@ -13,9 +13,10 @@ RUN npm install
 #Copy updated files
 COPY . .
 
-#Start services
+#Build react project
 RUN npm run build
 
+#Start react project
 CMD ["npm", "start"]
 
 EXPOSE 80
